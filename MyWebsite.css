@@ -4,7 +4,7 @@
 
 .navbar{
 	height: 100px;
-	z-index: 1000;
+	z-index: 100;
 }
 
 @media screen and (max-width:400px){
@@ -70,7 +70,7 @@ p{
     #centering_name{
     	text-align: center;
 		font-weight: 800;
-    	font-size:22px !important;
+    	font-size:23px !important;
     }  
 }
 
@@ -84,7 +84,7 @@ p{
     #centering_program{
     	text-align: center;
 		font-weight: 50;
-    	font-size:15px !important;
+    	font-size:16px !important;
     } 
 } 
 
