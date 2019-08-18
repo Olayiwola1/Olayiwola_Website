@@ -46,7 +46,7 @@ p{
 #centering_name{
 	text-align: center;
 	font-weight: 800;
-	font-size: 30px;	
+	font-size: 26.5px;	
 	padding-top: 500px;
 }
 #centering_program{
@@ -89,3 +89,4 @@ p{
 .btn-primary {
     background-color: #5c81bd !important;
 }
+
