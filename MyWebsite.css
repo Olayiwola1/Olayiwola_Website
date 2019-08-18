@@ -1,0 +1,91 @@
+#font_name{
+	font-family: Lora;
+}
+.navbar{
+	height: 100px;
+	z-index: 1000;
+}
+.navbar-nav{
+    background-color: #f8f9fa !important;
+}
+h1{
+	font-family: Lora;
+	text-align: center;
+	font-weight: bold;
+	color: #5c81bd
+}
+h2{
+	font-family: Lora;
+	font-weight: bold;
+	color: #5c81bd
+}
+#stylingIntro{
+	font-family: Lora;
+
+}
+#stylingCurrh5{
+	font-family: Cinzel;
+	font-weight: bold;
+}
+#stylingCurr{
+	font-family: Cinzel;
+}
+#stylingPrevh5{
+	font-family: Satisfy;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#stylingPrev{
+	font-family: Satisfy;
+	font-size: 20px;
+}
+
+p{
+	color: #5c81bd
+}
+#centering_name{
+	text-align: center;
+	font-weight: 800;
+	font-size: 30px;	
+	padding-top: 500px;
+}
+#centering_program{
+	text-align: center;
+	font-weight: 50;
+	font-size: 18px;
+}
+
+#pic{
+	height : 400px;
+	width : 320px;
+}
+
+#fewProjects{
+	font-family: Satisfy;
+	font-size: 28px;
+	color: #000000;
+
+}
+.card-title{
+	color: #5c81bd;
+	font-family: Lora;
+	font-weight: bold; 
+
+}
+.card-text{
+	color: #000000;
+	font-family: Lora;
+}
+.nav_height{
+	height: 60px;
+}
+.copyright{
+	color: #000000;
+}
+.icons_buttons{
+	color: #5c81bd;
+
+}
+.btn-primary {
+    background-color: #5c81bd !important;
+}
