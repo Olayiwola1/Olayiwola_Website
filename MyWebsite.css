@@ -35,26 +35,15 @@ h2{
 
 }
 
-#stylingCurrh5{
+#stylingCurrh5, #stylingPrevh5{
 	font-family: Cinzel;
 	font-weight: bold;
 	font-size: 18px;
 }
 
-#stylingCurr{
+#stylingCurr, #stylingPrev{
 	font-family: Cinzel;
 	font-size: 16.5px;
-}
-
-#stylingPrevh5{
-	font-family: Satisfy;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-#stylingPrev{
-	font-family: Satisfy;
-	font-size: 22px;
 }
 
 p{
