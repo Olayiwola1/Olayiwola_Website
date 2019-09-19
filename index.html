@@ -7,7 +7,6 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="MyWebsite.css">
-	<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
@@ -15,37 +14,39 @@
 	<title>Olayiwola Bakare | Portfolio</title>
 	
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light border border-primary">
-		<div class = "container">
-	  		<a class="navbar-brand ml-5" id = "font_name" href="#">
-	  			<p class = "d-inline ml-2" id = "centering_name">Olayiwola Bakare</p>
-	  			<p class = "d-block"id = "centering_program">Engineer || Designer</p>
-	  		</a>
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-	  		</button>
+<body data-spy="scroll" data-target=".fixed-top" data-offset="50" id = "about">
+	<div class = "fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light border border-primary">
+			<div class = "container">
+		  		<a class="navbar-brand ml-5" id = "font_name" href="#">
+		  			<p class = "d-inline ml-2" id = "centering_name">Olayiwola Bakare</p>
+		  			<p class = "d-block"id = "centering_program">Engineer || Designer</p>
+		  		</a>
+		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  		</button>
 
-	  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    		<ul class="navbar-nav mr-auto">
-	      			<li class="nav-item active mx-5">
-	        			<a class="nav-link" href="#about">About <i class="far fa-address-card"></i><span class="sr-only">(current)</span></a>
-	     			 </li>
-	      			<li class="nav-item active mx-5">
-	        			<a class="nav-link" href="#portfolio">Projects <i class="fas fa-book-open"></i></a>
-	      			</li>
-	      			<li class="nav-item active mx-5">
-	        			<a class="nav-link" target = "_blank" href="OlayiwolaBakare_Resume.pdf">Resume <i class="fas fa-file"></i></a>
-	      			</li>
-	      			<li class="nav-item active mx-5">
-	        			<a class="nav-link" href="mailto:bakaro2@mcmaster.ca">Contact <i class="fas fa-address-book"></i></i></a>
-	      			</li>
-	    		</ul>
-	  		</div>
-	  	</div>
-	</nav>
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    		<ul class="navbar-nav mr-auto nav-pills">
+		      			<li class="nav-item active mx-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+		        			<a class="nav-link" href="#about">About <i class="far fa-address-card"></i><span class="sr-only">(current)</span></a>
+		     			 </li>
+		      			<li class="nav-item active mx-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+		        			<a class="nav-link" href="#portfolio">Projects <i class="fas fa-book-open"></i></a>
+		      			</li>
+		      			<li class="nav-item active mx-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+		        			<a class="nav-link" target = "_blank" href="OlayiwolaBakare_Resume.pdf">Resume <i class="fas fa-file"></i></a>
+		      			</li>
+		      			<li class="nav-item active mx-5" data-toggle="collapse" data-target=".navbar-collapse.show">
+		        			<a class="nav-link" href="mailto:bakaro2@mcmaster.ca">Contact <i class="fas fa-address-book"></i></i></a>
+		      			</li>
+		    		</ul>
+		  		</div>
+		  	</div>
+		</nav>
+	</div>
 
-	<br id = "about">
+	<br>
 
 	<div class = "container">
 		<div class = "row">
@@ -55,7 +56,7 @@
 			<div class = "col-md-6 col-lg-8">
 				<h1 class = "display-5">Welcome!</h1>
 				<div id = stylingIntro>Hello! My name is Olayiwola Bakare. I am a 3rd-year <a target = "_blank" href="https://www.eng.mcmaster.ca/ece/programs/degree-options/bengmanagement/computer-engineering-and-management">Computer Engineering & Management</a> student at McMaster University. I chose this degree because it allows me to learn the necessary tools that are needed to gain a broader insight into how consumers interact with the software or hardware I create. I live in Toronto, Canada but I am interested in opportunities from various parts of the world.
-				<div><p>Interests: Basketball, Full-Stack Development, Designing, Art</p></div>
+				<div><p>Interests: Basketball, Full-Stack Development, Reading, Designing, Art</p></div>
 			</div>
 			
 
@@ -73,7 +74,7 @@
 				<hr>
 
 				<h5 class = "text-muted" id ="stylingPrevh5">Previously</h5>
-				<div class = "text-muted">
+				<div class = "text-muted" id = "portfolio">
 					<ul id = "stylingPrev">
 						<li>Interned at Sun Life Financial</li>
 						<li>Mentioned on <a target = "_blank" href="https://dailynews.mcmaster.ca/articles/why-diversity-in-stem-is-important/"> McMaster University </a>website</li>
@@ -84,22 +85,29 @@
 		</div>	
 	</div>
 
-	<hr id = "portfolio" width= "75%">
+	<hr width= "75%">
 
-	<div class = "container">
+	<div class = "container newFont">
 		<div class = "justify-content-center row">
-			<h2 class = "d-flex justify-content-center display-5 mb-3">Projects - </h2> &emsp;<div id = "fewProjects"> More updates coming soon !!</div>
+			<h2 class = "d-flex justify-content-center display-5 mb-3">Projects </h2>
 		</div>
 		<div class = "row justify-content-end">
+
 			<div class = "col-md-6 mb-4">
 				<div class="card">
-					<img height = 170px src="Landfix.png" class="card-img-top" alt="...">
+					<img height = 217px src="Landfix.png" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    <h5 class="card-title d-flex justify-content-center">Land_Fix</h5>
-				    <p class="card-text">At NSBE Hacks UofT in Toronto, my team and I came up with an idea to help deal with the prominent problem of corruption around properties in Africa. We came up with a Blockchain-based app that creates an immutable digital record of the coordinates of lands/ properties and connects it to the rightful owner's name. We also leveraged the Google Maps API to create a visual representation of the owner's property. This system helps promote transparency since it is immutable, it can only be changed when the ownership of the property is being transferred to another person.
-				    <div><p class = "d-inline">Technologies Used:</p> HTML/CSS, JavaScript, Google Maps API, Python</div></p>
-				    <a href="https://github.com/Olayiwola1/NSBE_Hacks" target = "_blank" class="btn btn-primary d-flex justify-content-center">View Project</a>
+				    <p class="card-text">Digitally immutable system to help deal with property corruption and promote transparency in Africa. <a href="https://github.com/Olayiwola1/NSBE_Hacks" target = "_blank">View Code</a></p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card1" role="button" aria-expanded="false" aria-controls="card1" >About Project</a>
+					<div class="collapse" id="card1">
+					  <div class="card card-body">
+							At NSBE Hacks UofT in Toronto, my team and I came up with an idea to help deal with the prominent problem of corruption around properties in Africa. We came up with a Blockchain-based app that creates an immutable digital record of the coordinates of lands/ properties and connects it to the rightful owner's name. We also leveraged the Google Maps API to create a visual representation of the owner's property. This system helps promote transparency since it is immutable, it can only be changed when the ownership of the property is being transferred to another person.
+						<hr>
+					    <div><p class = "d-inline">Technologies Used: Google Maps API, Python, JavaScript, HTML, CSS </p></div>
+					  </div>
 					</div>
+				</div>
 				</div>
 			</div>
 
@@ -108,9 +116,15 @@
 					<img height = 217px src="Gamification.jpg" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    <h5 class="card-title d-flex justify-content-center">Gamification</h5>
-				    <p class="card-text">SHacks was Scotiabank's first-ever hackathon. My team and I were tasked with creating a gamification system that can be used to help attract more customers. We approached the problem by trying to leverage AR technology and use it to help us market their services. We decided to use the bank's logo as an image marker, so whenever it is scanned by our app a trivia quiz would pop up, and customers would be able to play and learn more about the bank and their services.
-				    <div><p class = "d-inline">Technologies Used:</p> Python, Flask, ARAF browser</div></p>
-				    <a href="#" class="btn btn-primary d-flex justify-content-center">View Project</a>
+				    <p class="card-text">Gamification system that was created with the aid of augmented reality technology.</p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card2" role="button" aria-expanded="false" aria-controls="card2" >About Project</a>
+					<div class="collapse" id="card2">
+					  <div class="card card-body">
+							SHacks was Scotiabank's first hackathon. My team and I were tasked with creating a gamification system that can be used to help attract more customers. We approached the problem by trying to leverage AR technology and use it to help us market their services. We decided to use the bank's logo as an image-marker, so whenever it is scanned by our app a trivia quiz would pop up, and customers would be able to play and learn more about the bank and their services.
+						<hr>
+					    <div><p class = "d-inline">Technologies Used: Python, Flask, ARAF browser </p></div>
+					  </div>
+					</div>
 				</div>
 				</div>
 			</div>
@@ -119,33 +133,19 @@
 				<div class="card">
 					<img height = 170px src="ComingSoon.png" class="card-img-top" alt="...">
 				  	<div class="card-body">
-				    <h5 class="card-title d-flex justify-content-center">Digital Transformation</h5>
-				    <p class="card-text">Co-Founder of a custom software development company that focuses on creating scalable websites for small businesses. Click on the button below to view our website and learn more about the company.
-				    <div><p class = "d-inline">Technologies Used:</p> Bootstrap, HTML, CSS, JavaScript, ReactJS</div></p>
-				    <a href="#" class="btn btn-primary d-flex justify-content-center">View Project</a>
+				    <h5 class="card-title d-flex justify-content-center">Digital iceCloud</h5>
+				    <p class="card-text">Co-founded a software development company.</p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card3" role="button" aria-expanded="false" aria-controls="card3" >About Project</a>
+					<div class="collapse" id="card3">
+					  <div class="card card-body">
+							Co-Founder of a custom software development company that focuses on creating scalable websites and mobile applications for small businesses. Click on the button below to view our website and learn more about the company. The company website will be live at the end of September.
+						<hr>
+						<a class = "m-auto" href=#about><button type="button" class="btn btn-primary justify-content-center">View Company</button></a>
+						<hr>
+					    <div><p class = "d-inline">Technologies Used: ReactJS, Bootstrap, HTML, CSS, JavaScript</p></div>
+					  </div>
 					</div>
 				</div>
-			</div>
-
-			<div class = "col-md-6 mb-4">
-				<div class="card">
-					<img height = 170px src="ComingSoon.png" class="card-img-top" alt="...">
-				  	<div class="card-body">
-				    <h5 class="card-title d-flex justify-content-center">12to4</h5>
-				    <p class="card-text">My University uses a 12.0 GPA scale. I am currently working on creating a web application that will be able to automatically convert a student's GPA from a 12.0 to a 4.0 just with the click of a button.
-				    <div><p class = "d-inline">Technologies Used:</p> JavaScript</div></p>
-				    <a href="#" class="btn btn-primary d-flex justify-content-center">View Project</a>
-					</div>
-				</div>
-			</div>
-
-			<div class = "col-md-6 mb-4">
-				<div class="card">
-					<img height = 170px src="TheFashionEnabler.jpg" class="card-img-top" alt="...">
-				  	<div class="card-body">
-				    <h5 class="card-title d-flex justify-content-center">The Fashion Enabler</h5>
-				    <p class="card-text">I alongside three other people, worked to create, design, and build a device that can be used to assist individuals with Cerebral Palsy, with daily activities such as selecting clothes.</p>
-					</div>
 				</div>
 			</div>
 
@@ -154,11 +154,54 @@
 					<img height = 170px src="Prosthetic.png" class="card-img-top" alt="...">
 				  	<div class="card-body">
 				    <h5 class="card-title d-flex justify-content-center">Prosthetic Hand</h5>
-				    <p class="card-text">Worked alongside two other people to design, create, and 3D print a prosthetic hand that that had to adhere to specified requirements such as the fingers moving at a certain speed. 
-				    </p>
+				    <p class="card-text">Created  and designed a 3D printed prosthetic hand.</p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card4" role="button" aria-expanded="false" aria-controls="card4" >About Project</a>
+					<div class="collapse" id="card4">
+					  <div class="card card-body">
+							Worked alongside two other people to design, create, and 3D print a prosthetic hand that that had to adhere to specific requirements such as the fingers moving at a certain speed. 
+						<hr>
+					    <div><p class = "d-inline">Technologies Used: Autodesk Inventor, 3D printer</p></div>
+					  </div>
 					</div>
 				</div>
+				</div>
 			</div>
+
+			<div class = "col-md-6 mb-4">
+				<div class="card">
+					<img height = 170px src="TheFashionEnabler.jpg" class="card-img-top" alt="...">
+				  	<div class="card-body">
+				    <h5 class="card-title d-flex justify-content-center">The Fashion Enabler</h5>
+				    <p class="card-text">Created a device that can be used to assist individuals with Cerebral Palsy.</p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card5" role="button" aria-expanded="false" aria-controls="card5" >About Project</a>
+					<div class="collapse" id="card5">
+					  <div class="card card-body">
+							I alongside three other people, worked to create, design, and build a device that can be used to assist individuals that have Cerebral Palsy with daily activities, such as selecting clothes.
+						<hr>
+					  </div>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class = "col-md-6 mb-4">
+				<div class="card">
+					<img height = 170px src="ComingSoon.png" class="card-img-top" alt="...">
+				  	<div class="card-body">
+				    <h5 class="card-title d-flex justify-content-center">Grade converter</h5>
+				    <p class="card-text">Currently developing a web application that helps students convert their grades from one scale to another.</p>
+				    <a class="btn btn-primary d-flex justify-content-center" data-toggle="collapse" href="#card6" role="button" aria-expanded="false" aria-controls="card6" >About Project</a>
+					<div class="collapse" id="card6">
+					  <div class="card card-body">
+							My University uses a 12.0 GPA scale. I am currently working on creating a web application that will be able to automatically convert a student's GPA from a 12.0 scale to other scales such as a 4.0 scale, just by clicking a button. Expected to be completed by mid-October.
+						<hr>
+					    <div><p class = "d-inline">Technologies Used: JavaScript, ReactJS, HTML, CSS</p></div>
+					  </div>
+					</div>
+				</div>
+				</div>
+			</div>
+
 		</div>
 
 		<div class = "d-flex justify-content-center">
@@ -167,7 +210,10 @@
 			</a>
 		</div>
 	</div>
+
+
 	<hr width= "75%">
+
 	<ul class="nav_height nav bg-light">
 		<div class = "container">
 		<div class = "row justify-content-center align-items-center">

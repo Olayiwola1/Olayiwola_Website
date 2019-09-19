@@ -1,9 +1,14 @@
+body {
+	padding-top: 100px;
+	position: relative; 
+ }
+
 #font_name{
 	font-family: Lora;
 }
 
 .navbar{
-	height: 100px;
+	height: 100px; 
 	z-index: 100;
 }
 
@@ -12,6 +17,11 @@
     	height: 10%;
     }  
 }
+
+.nav-pills .nav-link.active{
+	background-color: #5c81bd !important;
+}
+
 
 .navbar-nav{
     background-color: #f8f9fa !important;
@@ -50,6 +60,10 @@ p{
 	color: #5c81bd
 }
 
+.newFont{
+	font-family: Lora;
+}
+
 #centering_name{
 	text-align: center;
 	font-weight: 800;
@@ -82,13 +96,6 @@ p{
 #pic{
 	height : 400px;
 	width : 320px;
-}
-
-#fewProjects{
-	font-family: Satisfy;
-	font-size: 28px;
-	color: #000000;
-
 }
 
 .card-title{
