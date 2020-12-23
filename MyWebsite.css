@@ -46,14 +46,38 @@ h2{
 }
 
 #stylingCurrh5, #stylingPrevh5{
-	font-family: Cinzel;
+	font-family: Lora;
 	font-weight: bold;
 	font-size: 18px;
 }
 
 #stylingCurr, #stylingPrev{
-	font-family: Cinzel;
+	font-family: Lora;
 	font-size: 16.5px;
+}
+
+.style_bullet_points {
+	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	padding-left: 2rem;
+  	text-indent: -0.7rem;
+}
+
+#basketball::before {
+	content: "🏀";
+}
+
+#emerging_technologies::before { 
+	content: "👨🏿‍💻";
+}
+
+#art::before { 
+	content: "🖼️"
+} 
+
+#reading::before {
+	content: "📚"
 }
 
 p{
@@ -146,7 +170,7 @@ p{
 }
 
 .nav_height{
-	height: 30px;
+	height: 40px;
 }
 
 .copyright{
